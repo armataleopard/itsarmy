@@ -1,0 +1,278 @@
+:root {
+    --olive-green: #4b5320;
+    --khaki: #bdb76b;
+    --desert-yellow: #edc9af;
+    --dark-gray: #333;
+    --warning-red: #ff4136;
+    --explosion-orange: #ff851b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    animation: pulse 2s infinite;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--explosion-orange);
+}
+
+#hero {
+    height: 100vh;
+    background: url('banner.jpg') center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 133, 27, 0.5);
+}
+
+.ticker {
+    color: var(--explosion-orange);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.twitter {
+    background: #1da1f2;
+    color: white;
+}
+
+.buy {
+    background: var(--explosion-orange);
+    color: white;
+}
+
+.meme-gallery {
+    padding: 5rem 2rem;
+    background: var(--dark-gray);
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+#about {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.coin-details {
+    background: var(--olive-green);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.coin-details ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.coin-details li {
+    margin-bottom: 0.5rem;
+}
+
+#tokenomics {
+    padding: 5rem 2rem;
+    background: var(--khaki);
+}
+
+.tokenomics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tokenomics-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tokenomics-item h3 {
+    font-size: 2.5rem;
+    color: var(--explosion-orange);
+}
+
+footer {
+    background: var(--dark-gray);
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    nav {
+        display: none;
+    }
+} 

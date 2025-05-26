@@ -1,0 +1,59 @@
+
+Project: ItsArmie ($ARMI) - Meme Coin Website Specification
+
+Theme: Military / Tactical Ops
+Style: Modern, gritty, masculine with humor. Think low-budget military cosplay mixed with explosive meme chaos.
+
+Overview:
+This website is the landing page for the meme coin "ItsArmie" ($ARMI), themed around over-the-top DIY military gear and tactical absurdity. It must feel like a chaotic yet professional tribute to every weird military meme in existence.
+
+Core Structure:
+1. Hero Section:
+  - Fullscreen banner (banner.jpg)
+  - Prominently display the coin name and ticker: “ItsArmie ($ARMI)” in large stencil-style font with glowing edges (like a digital HUD)
+  - Explosion animation background with looping flames and smoke trails
+  - CTA buttons:
+    • [Twitter] → button linking to project's Twitter
+    • [Buy on Pump.fun] → linking to token page on pump.fun
+  - Logo (logo.jpg) fixed in top-left corner, slightly animated (pulse or rotation)
+
+2. Meme Gallery Section:
+  - Display all uploaded images (1.jpg–7.jpg)
+  - Interactive hover animation: hover over image triggers explosion sound or shaking effect
+  - Descriptions or fun callouts under images like “Field-tested Armor”, “Tactical Shampoo Loadout”, “Rocket-Bow Certified”
+
+3. About the Coin:
+  - Short meme-style storytelling:
+    “In a world where deodorants are ammo and pans are grenades… one soldier rises. Armed with humor, chaos, and a ton of $ARMI, he's ready to take on the crypto battlefield.”
+  - Details on $ARMI:
+    • Network: Solana
+    • Launchpad: Pump.fun
+    • No VC, no roadmap, just vibes.
+
+4. Tokenomics (in a meme format):
+  - 100% for troops (no presale)
+  - 0% taxes (soldiers eat free)
+  - Liquidity: locked till WW5
+
+5. Footer:
+  - Social links again (Twitter / Pump.fun)
+  - Background: subtle animated camouflage (camouflage.jpg)
+  - Easter egg: clicking helmet logo (helmet.jpg) triggers small explosion gif and sound
+
+Animations and Effects:
+- Use scroll-based animations (e.g. fade in, zoom in)
+- Click effects: small explosions
+- Mouse hover glow on buttons
+- Parallax background layers for depth
+
+Fonts:
+- Use military-style stencil fonts for headings
+- Modern sans-serif for body text (Roboto or Inter)
+
+Colors:
+- Olive green, khaki, dark gray, desert yellow
+- Accent with red warnings or explosion orange
+
+Ensure the site looks clean and expensive despite the meme chaos — spacing and balance are important.
+
+Deliver as clean HTML/CSS or compatible with Cursor app input.
